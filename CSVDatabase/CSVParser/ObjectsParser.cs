@@ -17,6 +17,7 @@ namespace CSVDatabase.CSVParser {
             foreach (T obj in objectList) {
                 outputString += obj.ToCSV() + "\n";
             }
+            outputString = outputString.Substring(0, outputString.Length - 1);
             return outputString;
         }
 

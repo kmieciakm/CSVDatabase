@@ -32,7 +32,7 @@ namespace XUnitTests {
             Address addressOne = new Address("Lodz", "91-322", "Rozana", 12);
             Address addressTwo = new Address("Krakow", "04-218", "Niepokonanych", 14);
             string expectedString = addressOne.Id + ",Lodz,91-322,Rozana,12" + "\n" +
-                                    addressTwo.Id + ",Krakow,04-218,Niepokonanych,14" + "\n";
+                                    addressTwo.Id + ",Krakow,04-218,Niepokonanych,14";
             List<Address> addresses = new List<Address> { addressOne, addressTwo };
             Assert.Equal(expectedString, ObjectsParser.SerializeMany(addresses));
         }
